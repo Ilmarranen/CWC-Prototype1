@@ -5,19 +5,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float playerNumber = 1;
-    private float speed = 12;
-    private float turnSpeed = 40;
-    private float horizontalInput;
-    private float verticalInput;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-  
-    }
+    [SerializeField] float speed = 12;
+    [SerializeField] float turnSpeed = 40;
+    [SerializeField] float horizontalInput;
+    [SerializeField] float verticalInput;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //Get player input
         if (playerNumber == 1)

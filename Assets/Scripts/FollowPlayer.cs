@@ -5,18 +5,12 @@ using UnityEngine;
 public class FollowPlayer : MonoBehaviour
 {
 	public GameObject player;
-	public Vector3 ñameraOffset;
+	[SerializeField]  public Vector3 ñameraOffset;
 
 	// Start is called before the first frame update
 	void Start()
 	{
 		ñameraOffset = transform.position;
-	}
-
-	// Update is called once per frame
-	void Update()
-	{
-  
 	}
 
 	void LateUpdate()
